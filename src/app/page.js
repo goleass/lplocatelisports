@@ -84,19 +84,19 @@ const portifolio = [
       "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
   },
   {
-    key: 6,
+    key: 7,
     title: "Fardamento esportivo",
     description:
       "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
   },
   {
-    key: 6,
+    key: 8,
     title: "Fardamento esportivo",
     description:
       "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
   },
   {
-    key: 6,
+    key: 9,
     title: "Fardamento esportivo",
     description:
       "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",

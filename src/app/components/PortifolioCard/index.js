@@ -1,26 +1,69 @@
 import Image from "next/image";
 import "./style.css";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Card = () => {
 
   const [imageSrc, setImageSrc] = useState("/images/portifolio/1.png");
 
-  const handleMouseEnter = () => {
-    setImageSrc("/images/portifolio/bg-portifolio-card.png");
-  };
+  const cardRef = useRef(null); // Referência ao elemento .card
+  const [isActive, setIsActive] = useState(false); // Estado para controlar a classe ativa
+  const [isMobile, setIsMobile] = useState(false); // Estado para verificar se é mobile
 
-  const handleMouseLeave = () => {
-    setImageSrc("/images/portifolio/1.png");
-  };
+  useEffect(() => {
+    // Verifica se está no ambiente do cliente
+    if (typeof window !== "undefined") {
+      // Define se o dispositivo é móvel
+      const mediaQuery = window.matchMedia("(max-width: 768px)");
+      setIsMobile(mediaQuery.matches);
+
+      // Observa mudanças na largura da tela
+      const handleResize = () => setIsMobile(mediaQuery.matches);
+      mediaQuery.addEventListener("change", handleResize);
+
+      // Cleanup do evento
+      return () => mediaQuery.removeEventListener("change", handleResize);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isMobile) return; // Aplica o efeito apenas em dispositivos móveis
+
+    const observerOptions = {
+      root: null, // Usa o viewport como referência
+      threshold: 1, // Ativa quando 100% do elemento está visível
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsActive(true); // Ativa a classe
+        } else {
+          setIsActive(false); // Remove a classe
+        }
+      });
+    }, observerOptions);
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    // Cleanup do observer
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, [isMobile]); // Atualiza o efeito ao mudar para mobile
 
   return (
     <div className="container-card-portifolio">
-      <div 
-        className="card"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        >
+      <div
+        ref={cardRef}
+        className={`card ${isActive ? "active" : ""}`}
+        onMouseEnter={() => isMobile || setIsActive(true)} // Só aplica hover se não for mobile
+        onMouseLeave={() => isMobile || setIsActive(false)}
+      >
         {/* Wrapper */}
         <div className="wrapper">
           <Image
