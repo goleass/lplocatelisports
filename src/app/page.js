@@ -336,7 +336,7 @@ function Hero() {
     <section
       className="relative h-screen bg-cover bg-center mt-[-72px] content-center"
       style={{ 
-        // backgroundImage: "url('/images/background-hero.png')" 
+        backgroundImage: "url('/images/background-hero.png')" 
       }}
     >
       {/* Sobreposição de cor */}
@@ -638,7 +638,7 @@ function Footer() {
             <p className="text-center text-base">
               Somos especialistas no que fazemos. Seu material 100%
               personalidado, em tecido dry fit com proteção UV. Você imagina, a
-              gente cria" - "A marca de quem é Master
+              gente cria - A marca de quem é Master
             </p>
           </div>
         </div>
