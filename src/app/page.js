@@ -106,14 +106,16 @@ const portifolio = [
 const reviews = [
   {
     key: 1,
-    title: "Bruno",
-    images: ["/images/reviews/1/review-1-foto1.png"],
+    title: "Dieison",
+    infos: ["Escolinha Esporte Clube Bahia", "São Leopoldo"],
+    images: ["/images/reviews/1/WhatsApp Image 2024-12-03 at 09.50.36.jpeg"],
     description:
-      "Adorei o serviço de confecção de uniformes! Material de qualidade, bem acabado e tudo entregue no prazo certinho. O pessoal é super atencioso e se preocupa em atender todas as nossas necessidades. Recomendo muito para quem quer uniformes bonitos e bem feitos!",
+      "Eu só tenho agradecer por vocês aceitar fazer parte do nosso projeto a parceria de vocês muito importante. Com esse material maravilhoso de boa qualidade. E Pessoas incríveis que te dão um suporte fantástico e a tendência empresa só cresce obrigado pelo apoio até hoje e mais coisas boas virão para vocês. Obrigado",
   },
   {
     key: 2,
     title: "Bruno",
+    infos: [],
     images: ["/images/reviews/1/review-1-foto1.png"],
     description:
       "Adorei o serviço de confecção de uniformes! Material de qualidade, bem acabado e tudo entregue no prazo certinho. O pessoal é super atencioso e se preocupa em atender todas as nossas necessidades. Recomendo muito para quem quer uniformes bonitos e bem feitos!",
@@ -121,6 +123,7 @@ const reviews = [
   {
     key: 3,
     title: "Bruno",
+    infos: [],
     images: ["/images/reviews/1/review-1-foto1.png"],
     description:
       "Adorei o serviço de confecção de uniformes! Material de qualidade, bem acabado e tudo entregue no prazo certinho. O pessoal é super atencioso e se preocupa em atender todas as nossas necessidades. Recomendo muito para quem quer uniformes bonitos e bem feitos!",
@@ -217,27 +220,42 @@ function Header() {
         <nav className="col-span-8 items-center justify-end hidden md:flex">
           <ul className="flex space-x-6">
             <li>
-              <a href="#inicio" className="hover:text-[#00D9B9] transition-all hover:underline">
+              <a
+                href="#inicio"
+                className="hover:text-[#00D9B9] transition-all hover:underline"
+              >
                 Início
               </a>
             </li>
             <li>
-              <a href="#portifolio" className="hover:text-[#00D9B9] transition-all hover:underline">
+              <a
+                href="#portifolio"
+                className="hover:text-[#00D9B9] transition-all hover:underline"
+              >
                 Portifólio
               </a>
             </li>
             <li>
-              <a href="#services" className="hover:text-[#00D9B9] transition-all hover:underline">
+              <a
+                href="#services"
+                className="hover:text-[#00D9B9] transition-all hover:underline"
+              >
                 Serviços
               </a>
             </li>
             <li>
-              <a href="#sobre" className="hover:text-[#00D9B9] transition-all hover:underline">
+              <a
+                href="#sobre"
+                className="hover:text-[#00D9B9] transition-all hover:underline"
+              >
                 Sobre Nós
               </a>
             </li>
             <li>
-              <a href="#faq" className="hover:text-[#00D9B9] transition-all hover:underline">
+              <a
+                href="#faq"
+                className="hover:text-[#00D9B9] transition-all hover:underline"
+              >
                 FAQ
               </a>
             </li>
@@ -335,8 +353,8 @@ function Hero() {
   return (
     <section
       className="relative h-screen bg-cover bg-center pt-32 md:pt-0 mt-[-72px] content-center"
-      style={{ 
-        backgroundImage: "url('/images/background-hero.png')" 
+      style={{
+        backgroundImage: "url('/images/background-hero.png')",
       }}
     >
       {/* Sobreposição de cor */}
@@ -390,7 +408,7 @@ function OurServices() {
         className="container mx-auto grid grid-cols-12 gap-5"
         style={{ maxWidth: "1200px" }}
       >
-        <div className="mb-20 col-span-12 flex flex-col justify-center text-white items-center text-3xl font-bold">
+        <div className="mb-20 col-span-12 flex flex-col justify-center text-white items-center text-2xl md:text-3xl font-bold">
           O QUE PRODUZIMOS?
         </div>
       </div>
@@ -422,7 +440,7 @@ function Portifolio() {
         className="container mx-auto grid grid-cols-4 md:grid-cols-12 gap-5"
         style={{ maxWidth: "1200px" }}
       >
-        <div className="mb-20 col-span-4 md:col-span-12 flex flex-col justify-center text-white items-center text-3xl font-bold">
+        <div className="mb-20 col-span-4 md:col-span-12 flex flex-col justify-center text-white items-center text-2xl md:text-3xl font-bold">
           NOSSO PORTIFÓLIO
         </div>
       </div>
@@ -475,7 +493,9 @@ function AboutUs() {
       >
         {/* Coluna da esquerda */}
         <div className="col-span-4 md:col-span-6 flex flex-col justify-center text-white">
-          <h1 className="text-3xl md:text-3xl font-semibold mb-8 text-center md:text-left">Sobre Nós</h1>
+          <h1 className="text-2xl md:text-3xl font-semibold mb-8 text-center md:text-left">
+            Sobre Nós
+          </h1>
           <p className="text-sm md:text-sm mb-10">
             Desde 2015, a Locateli Sports tem se dedicado a transformar a paixão
             pelo esporte em peças únicas e de alta qualidade. Somos
@@ -512,7 +532,7 @@ function AboutUs() {
   );
 }
 
-function ReviewCard({ title, description, images }) {
+function ReviewCard({ title, description, images, infos }) {
   return (
     <div className="items-center p-6 col-span-4 md:col-span-4 flex flex-col justify-between text-white rounded-2xl bg-[#111111] shadow-[0_1px_15px_-5px_rgba(255,255,255,0.4)] ">
       <div className="flex flex-col items-center">
@@ -526,7 +546,20 @@ function ReviewCard({ title, description, images }) {
         />
 
         <h1 className="mb-3 text-2xl text-center font-semibold">{title}</h1>
-        <p className="text-sm px-4 md:px-10 text-center">{description}</p>
+        
+        {infos && (infos.length > 0) && <div className="mb-3">
+          {infos.map((data, index) => {
+            return (
+              <>
+                <span className="text-xs" key={index}>{data}</span>
+                {index < infos.length - 1 && (
+                 " • "
+                )}
+              </>
+            );
+          })}
+        </div>}
+        <p className="text-sm px-4 md:px-10 text-center">&quot;{description}&quot;</p>
       </div>
 
       <div className="my-5 flex items-center justify-center gap-3">
@@ -548,7 +581,7 @@ function CustumerReview() {
         className="container mx-auto grid grid-cols-4 md:grid-cols-12 gap-5"
         style={{ maxWidth: "1200px" }}
       >
-        <div className="mb-20 col-span-4 md:col-span-12 flex flex-col justify-center text-white items-center text-2xl font-bold">
+        <div className="mb-20 col-span-4 md:col-span-12 flex flex-col justify-center text-white items-center text-2xl md:text-3xl font-bold">
           FEEDBACK DE CLIENTES
         </div>
       </div>
@@ -556,13 +589,14 @@ function CustumerReview() {
         className="container mx-auto grid grid-cols-4 md:grid-cols-12 gap-6"
         style={{ maxWidth: "1200px" }}
       >
-        {reviews.map(({ key, title, description, images }) => {
+        {reviews.map(({ key, title, description, images, infos }) => {
           return (
             <ReviewCard
               key={key}
               title={title}
               description={description}
               images={images}
+              infos={infos}
             />
           );
         })}
@@ -587,7 +621,7 @@ function FAQ() {
         className="container mx-auto grid grid-cols-12 gap-5"
         style={{ maxWidth: "1200px" }}
       >
-        <div className="mb-10 col-span-12 flex flex-col justify-center text-white items-center text-2xl font-bold">
+        <div className="mb-10 col-span-12 flex flex-col justify-center text-white items-center text-2xl md:text-3xl font-bold">
           FAQ
         </div>
       </div>
