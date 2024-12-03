@@ -290,22 +290,22 @@ function Header() {
         <nav className="md:hidden bg-black bg-opacity-95 h-screen text-white w-full absolute top-16 left-0">
           <ul className="flex flex-col items-center space-y-6 py-4">
             <li>
-              <a href="#home" className="hover:text-gray-300">
+              <a href="#inicio" className="hover:text-gray-300">
                 Início
               </a>
             </li>
             <li>
-              <a href="#sobre" className="hover:text-gray-300">
+              <a href="#portifolio" className="hover:text-gray-300">
                 Portifólio
               </a>
             </li>
             <li>
-              <a href="#servicos" className="hover:text-gray-300">
+              <a href="#services" className="hover:text-gray-300">
                 Sobre Nós
               </a>
             </li>
             <li>
-              <a href="#contato" className="hover:text-gray-300">
+              <a href="#faq" className="hover:text-gray-300">
                 FAQ
               </a>
             </li>
