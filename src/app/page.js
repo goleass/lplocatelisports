@@ -334,7 +334,7 @@ function Header() {
 function Hero() {
   return (
     <section
-      className="relative h-screen bg-cover bg-center mt-[-52px] md:mt-[-72px] content-center"
+      className="relative h-screen bg-cover bg-center pt-32 md:pt-0 mt-[-72px] content-center"
       style={{ 
         backgroundImage: "url('/images/background-hero.png')" 
       }}
