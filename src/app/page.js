@@ -289,32 +289,32 @@ function Header() {
       {isMenuOpen && (
         <nav className="md:hidden bg-black bg-opacity-95 h-screen text-white w-full absolute top-16 left-0">
           <ul className="flex flex-col items-center space-y-6 py-4">
-            <li>
+            <li onClick={() => setIsMenuOpen(false)}>
               <a href="#inicio" className="hover:text-gray-300">
                 Início
               </a>
             </li>
-            <li>
+            <li onClick={() => setIsMenuOpen(false)}>
               <a href="#portifolio" className="hover:text-gray-300">
                 Portifólio
               </a>
             </li>
-            <li>
-              <a href="#services" className="hover:text-gray-300">
+            <li onClick={() => setIsMenuOpen(false)}>
+              <a href="#sobre" className="hover:text-gray-300">
                 Sobre Nós
               </a>
             </li>
-            <li>
+            <li onClick={() => setIsMenuOpen(false)}>
               <a href="#faq" className="hover:text-gray-300">
                 FAQ
               </a>
             </li>
-            <li>
+            <li onClick={() => setIsMenuOpen(false)}>
               <a href="#contato" className="hover:text-gray-300">
                 Contato
               </a>
             </li>
-            <li>
+            <li onClick={() => setIsMenuOpen(false)}>
               <a
                 href="https://wa.me/5551984346437?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%21"
                 target="_blank"
