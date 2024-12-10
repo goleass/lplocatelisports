@@ -2,9 +2,9 @@ import Image from "next/image";
 import "./style.css";
 import { useEffect, useRef, useState } from "react";
 
-const Card = () => {
+const Card = ({ mockupUrl, thumbnailUrl }) => {
 
-  const [imageSrc, setImageSrc] = useState("/images/portifolio/1.png");
+  const [imageSrc, setImageSrc] = useState(thumbnailUrl);
 
   const cardRef = useRef(null); // Referência ao elemento .card
   const [isActive, setIsActive] = useState(false); // Estado para controlar a classe ativa
@@ -68,7 +68,7 @@ const Card = () => {
         <div className="wrapper">
           <Image
             className="cover-image"
-            // src="/images/portifolio/1.png"
+            // src=thumbnailUrl
             src={imageSrc}
             alt="BG Mockup"
             width={500}
@@ -79,7 +79,7 @@ const Card = () => {
         {/* Wrapper */}
         {/* <div className="" style={{overflow: 'hidden', height:'100%', display: isActive ? 'none' : 'block'}}>
           <Image
-            src="/images/portifolio/mockup-1.png"
+            src={mockupUrl}
             // src={imageSrc}
             alt="BG Mockup"
             width={150}
@@ -99,7 +99,7 @@ const Card = () => {
         {/* Character */}
         <Image
           className="character"
-          src="/images/portifolio/mockup-1.png"
+          src={mockupUrl}
           alt="Character"
           width={500}
           height={500}

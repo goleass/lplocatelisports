@@ -49,57 +49,48 @@ const ourServices = [
 const portifolio = [
   {
     key: 1,
-    title: "Fardamento esportivo",
-    description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+    mockupUrl: "/images/portifolio/mockup-1.png",
+    thumbnailUrl: "/images/portifolio/1.png",
   },
   {
     key: 2,
-    title: "Fardamento esportivo",
-    description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+    mockupUrl: "/images/portifolio/mockup-2.png",
+    thumbnailUrl: "/images/portifolio/2.png",
   },
   {
     key: 3,
-    title: "Fardamento esportivo",
-    description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+    mockupUrl: "/images/portifolio/mockup-3.png",
+    thumbnailUrl: "/images/portifolio/3.png",
   },
   {
     key: 4,
-    title: "Fardamento esportivo",
-    description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+    mockupUrl: "/images/portifolio/mockup-1.png",
+    thumbnailUrl: "/images/portifolio/1.png",
   },
   {
     key: 5,
-    title: "Fardamento esportivo",
-    description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+    mockupUrl: "/images/portifolio/mockup-1.png",
+    thumbnailUrl: "/images/portifolio/1.png",
   },
   {
     key: 6,
-    title: "Fardamento esportivo",
-    description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+    mockupUrl: "/images/portifolio/mockup-1.png",
+    thumbnailUrl: "/images/portifolio/1.png",
   },
   {
     key: 7,
-    title: "Fardamento esportivo",
-    description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+    mockupUrl: "/images/portifolio/mockup-1.png",
+    thumbnailUrl: "/images/portifolio/1.png",
   },
   {
     key: 8,
-    title: "Fardamento esportivo",
-    description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+    mockupUrl: "/images/portifolio/mockup-1.png",
+    thumbnailUrl: "/images/portifolio/1.png",
   },
   {
     key: 9,
-    title: "Fardamento esportivo",
-    description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+    mockupUrl: "/images/portifolio/mockup-1.png",
+    thumbnailUrl: "/images/portifolio/1.png",
   },
 ];
 
@@ -114,19 +105,17 @@ const reviews = [
   },
   {
     key: 2,
-    title: "Bruno",
+    title: "Medina River Plate",
     infos: [],
-    images: ["/images/reviews/1/review-1-foto1.png"],
-    description:
-      "Adorei o serviço de confecção de uniformes! Material de qualidade, bem acabado e tudo entregue no prazo certinho. O pessoal é super atencioso e se preocupa em atender todas as nossas necessidades. Recomendo muito para quem quer uniformes bonitos e bem feitos!",
+    images: ["/images/reviews/2/WhatsApp Image 2024-12-09 at 20.30.04.jpeg"],
+    description: "Muito top! Recomendo demais!",
   },
   {
     key: 3,
-    title: "Bruno",
+    title: "Escolinha Galera do 7",
     infos: [],
-    images: ["/images/reviews/1/review-1-foto1.png"],
-    description:
-      "Adorei o serviço de confecção de uniformes! Material de qualidade, bem acabado e tudo entregue no prazo certinho. O pessoal é super atencioso e se preocupa em atender todas as nossas necessidades. Recomendo muito para quem quer uniformes bonitos e bem feitos!",
+    images: ["/images/reviews/3/WhatsApp Image 2024-12-09 at 20.35.27.jpeg"],
+    description: "Vcs fizeram nosso uniforme e os pais amaram",
   },
 ];
 
@@ -448,11 +437,19 @@ function Portifolio() {
         className="container mx-auto grid grid-cols-4 md:grid-cols-12 gap-10"
         style={{ maxWidth: "1200px" }}
       >
-        {portifolio.map(({ key, title, description }) => {
-          return (
-            <CardPortifolio key={key} title={title} description={description} />
-          );
-        })}
+        {portifolio.map(
+          ({ key, title, description, mockupUrl, thumbnailUrl }) => {
+            return (
+              <CardPortifolio
+                key={key}
+                title={title}
+                description={description}
+                mockupUrl={mockupUrl}
+                thumbnailUrl={thumbnailUrl}
+              />
+            );
+          }
+        )}
       </div>
     </section>
   );
@@ -467,10 +464,10 @@ function CardOurServices({ title, description }) {
   );
 }
 
-function CardPortifolio({ url }) {
+function CardPortifolio({ mockupUrl, thumbnailUrl }) {
   return (
     <div className="col-span-4 flex flex-col justify-center">
-      <Card />
+      <Card mockupUrl={mockupUrl} thumbnailUrl={thumbnailUrl} />
       {/* <div className="bg-red-800"> cascdacd</div> */}
     </div>
   );
@@ -546,20 +543,24 @@ function ReviewCard({ title, description, images, infos }) {
         />
 
         <h1 className="mb-3 text-2xl text-center font-semibold">{title}</h1>
-        
-        {infos && (infos.length > 0) && <div className="mb-3">
-          {infos.map((data, index) => {
-            return (
-              <>
-                <span className="text-xs" key={index}>{data}</span>
-                {index < infos.length - 1 && (
-                 " • "
-                )}
-              </>
-            );
-          })}
-        </div>}
-        <p className="text-sm px-4 md:px-10 text-center">&quot;{description}&quot;</p>
+
+        {infos && infos.length > 0 && (
+          <div className="mb-3">
+            {infos.map((data, index) => {
+              return (
+                <>
+                  <span className="text-xs" key={index}>
+                    {data}
+                  </span>
+                  {index < infos.length - 1 && " • "}
+                </>
+              );
+            })}
+          </div>
+        )}
+        <p className="text-sm px-4 md:px-10 text-center">
+          &quot;{description}&quot;
+        </p>
       </div>
 
       <div className="my-5 flex items-center justify-center gap-3">
@@ -712,6 +713,7 @@ function Footer() {
         </div>
         <div className="mb-5 md:mb-20 col-span-4 md:col-span-2">
           <div className="text-base font-semibold">SIGA-NOS</div>
+          <div></div>
         </div>
       </div>
 
