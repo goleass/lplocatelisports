@@ -64,33 +64,13 @@ const portifolio = [
   },
   {
     key: 4,
-    mockupUrl: "/images/portifolio/mockup-1.png",
-    thumbnailUrl: "/images/portifolio/1.png",
+    mockupUrl: "/images/portifolio/mockup-4.png",
+    thumbnailUrl: "/images/portifolio/4.png",
   },
   {
     key: 5,
-    mockupUrl: "/images/portifolio/mockup-1.png",
-    thumbnailUrl: "/images/portifolio/1.png",
-  },
-  {
-    key: 6,
-    mockupUrl: "/images/portifolio/mockup-1.png",
-    thumbnailUrl: "/images/portifolio/1.png",
-  },
-  {
-    key: 7,
-    mockupUrl: "/images/portifolio/mockup-1.png",
-    thumbnailUrl: "/images/portifolio/1.png",
-  },
-  {
-    key: 8,
-    mockupUrl: "/images/portifolio/mockup-1.png",
-    thumbnailUrl: "/images/portifolio/1.png",
-  },
-  {
-    key: 9,
-    mockupUrl: "/images/portifolio/mockup-1.png",
-    thumbnailUrl: "/images/portifolio/1.png",
+    mockupUrl: "/images/portifolio/mockup-5.png",
+    thumbnailUrl: "/images/portifolio/5.png",
   },
 ];
 
