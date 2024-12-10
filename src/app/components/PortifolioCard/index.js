@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const Card = () => {
 
-  const [imageSrc, setImageSrc] = useState("/images/portifolio/1.png");
+  const [imageSrc, setImageSrc] = useState("/images/portifolio/bg-portifolio-card.png");
 
   const cardRef = useRef(null); // Referência ao elemento .card
   const [isActive, setIsActive] = useState(false); // Estado para controlar a classe ativa
@@ -64,15 +64,26 @@ const Card = () => {
         onMouseEnter={() => isMobile || setIsActive(true)} // Só aplica hover se não for mobile
         onMouseLeave={() => isMobile || setIsActive(false)}
       >
-        {/* Wrapper */}
+
         <div className="wrapper">
           <Image
             className="cover-image"
             // src="/images/portifolio/1.png"
             src={imageSrc}
-            alt="Cover"
+            alt="BG Mockup"
             width={500}
             height={500}
+          />
+        </div>
+
+        {/* Wrapper */}
+        <div className="" style={{overflow: 'hidden', height:'100%', display: isActive ? 'none' : 'block'}}>
+          <Image
+            src="/images/portifolio/mockup-1.png"
+            // src={imageSrc}
+            alt="BG Mockup"
+            width={150}
+            height={400}
           />
         </div>
 

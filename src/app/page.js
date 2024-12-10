@@ -10,39 +10,39 @@ import ChevronDown from "./icons/ep_arrow-down";
 const ourServices = [
   {
     key: 1,
-    title: "Fardamento esportivo",
+    title: "Uniforme esportivo",
     description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+      "Confeccionamos uniformes completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
   },
   {
     key: 2,
-    title: "Fardamento esportivo",
+    title: "Faixa personalizada",
     description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+      "Produzimos faixas exclusivas para comemorações, eventos e premiações, com cores, estampas e textos totalmente customizáveis.",
   },
   {
     key: 3,
-    title: "Fardamento esportivo",
+    title: "Boné personalizado",
     description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+      "Criamos bonés personalizados com bordados ou estampas de alta qualidade, ideais para times, eventos ou divulgação de marcas.",
   },
   {
     key: 4,
-    title: "Fardamento esportivo",
+    title: "Bandeira personalizada",
     description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+      "Desenvolvemos bandeiras únicas para representar sua equipe, evento ou instituição, utilizando materiais resistentes e impressões de alta definição.",
   },
   {
     key: 5,
-    title: "Fardamento esportivo",
+    title: "Agasalho personalizado",
     description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+      "Fabricamos agasalhos sob medida para equipes e eventos, unindo estilo e conforto para uso em treinos, viagens ou uniformização.",
   },
   {
     key: 6,
-    title: "Fardamento esportivo",
+    title: "Uniforme personalizado",
     description:
-      "Confeccionamos fardamentos completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+      "Produzimos uniformes de alta qualidade para diferentes segmentos, desde esportivo até corporativo, com atenção a cada detalhe para refletir sua identidade.",
   },
 ];
 
