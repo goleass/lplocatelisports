@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const Card = () => {
 
-  const [imageSrc, setImageSrc] = useState("/images/portifolio/bg-portifolio-card.png");
+  const [imageSrc, setImageSrc] = useState("/images/portifolio/1.png");
 
   const cardRef = useRef(null); // Referência ao elemento .card
   const [isActive, setIsActive] = useState(false); // Estado para controlar a classe ativa
@@ -77,7 +77,7 @@ const Card = () => {
         </div>
 
         {/* Wrapper */}
-        <div className="" style={{overflow: 'hidden', height:'100%', display: isActive ? 'none' : 'block'}}>
+        {/* <div className="" style={{overflow: 'hidden', height:'100%', display: isActive ? 'none' : 'block'}}>
           <Image
             src="/images/portifolio/mockup-1.png"
             // src={imageSrc}
@@ -85,7 +85,7 @@ const Card = () => {
             width={150}
             height={400}
           />
-        </div>
+        </div> */}
 
         {/* Title */}
         {/* <Image

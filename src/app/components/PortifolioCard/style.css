@@ -85,7 +85,7 @@
 }
 
 .card.active .wrapper {
-  transform: perspective(1000px) translateY(15%) rotateX(80deg);
+  transform: perspective(2000px) translateY(30%) rotateX(80deg);
   box-shadow: 0px 35px 32px -8px rgba(0, 217, 185, 0.50);
   width: 200px;
   height: 200px;
@@ -106,6 +106,6 @@
 
 .card.active .character {
 opacity: 1;
-transform: translate3d(0%, -2%, -1000px);
+transform: translate3d(0%, 5%, -1000px);
 filter: drop-shadow(0 4px 6px rgba(0, 217, 185, 0.9))
 }
