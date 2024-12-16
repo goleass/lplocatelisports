@@ -355,7 +355,7 @@ function Hero() {
 
         <div className="col-span-12 md:col-span-6 flex justify-center">
           <Image
-            src="/images/mockup-bg.png"
+            src="/images/mockup-bg-hero.png"
             alt="Hero Image"
             width={1000}
             height={1000}
