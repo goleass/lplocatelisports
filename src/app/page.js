@@ -53,11 +53,6 @@ const portifolio = [
     thumbnailUrl: "/images/portifolio/1.png",
   },
   {
-    key: 2,
-    mockupUrl: "/images/portifolio/mockup-2.png",
-    thumbnailUrl: "/images/portifolio/2.png",
-  },
-  {
     key: 3,
     mockupUrl: "/images/portifolio/mockup-3.png",
     thumbnailUrl: "/images/portifolio/3.png",
