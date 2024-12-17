@@ -596,7 +596,7 @@ function FAQ() {
   return (
     <section
       id="faq"
-      className="px-4 py-16 md:py-40 relative content-center rounded-[40px] bg-[#111111]"
+      className="px-4 py-16 md:py-40 relative content-center rounded-[40px] bg-[#111111] text-[#FFF]"
     >
       <div
         className="container mx-auto grid grid-cols-12 gap-5"
@@ -636,7 +636,7 @@ function FAQ() {
 
 function Footer() {
   return (
-    <section className="pt-20 relative content-center bg-[#09080B]">
+    <section className="pt-20 relative content-center bg-[#09080B] text-[#FFF]">
       <div
         className="container px-4 md:mx-auto grid grid-cols-4 md:grid-cols-12 gap-0 md:gap-5"
         style={{ maxWidth: "1200px" }}
