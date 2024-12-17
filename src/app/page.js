@@ -650,7 +650,7 @@ function Footer() {
               height={100}
             />
 
-            <p className="text-center text-base">
+            <p className="text-center text-base text-[#FFF]">
               Somos especialistas no que fazemos. Seu material 100%
               personalidado, em tecido dry fit com proteção UV. Você imagina, a
               gente cria - A marca de quem é Master
@@ -704,11 +704,11 @@ function Footer() {
         >
           <div className="my-3 col-span-12 flex flex-col justify-center items-center text-xs md:text-base">
             <div className="flex flex-col">
-              <div className="text-center">
+              <div className="text-center text-[#FFF]">
                 © Copyright 2024 Todos os direitos reservados | Locateli Sports
                 - CNPJ: 46.996.636/0001-36{" "}
               </div>
-              <div className="text-center">
+              <div className="text-center text-[#FFF]">
                 Site desenvolvido por{" "}
                 <a
                   href="https://leonardoassuncao.com.br"
