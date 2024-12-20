@@ -12,7 +12,7 @@ const ourServices = [
     key: 1,
     title: "Uniforme esportivo",
     description:
-      "Confeccionamos uniformes completos para equipes esportivas, com tecidos tecnológicos e designs personalizados que garantem conforto, desempenho e durabilidade.",
+      "Confeccionamos uniformes completos para equipes esportivas, com tecidos tecnológicos e designs 100% personalizados que garantem conforto, desempenho e durabilidade.",
   },
   {
     key: 2,
@@ -40,9 +40,9 @@ const ourServices = [
   },
   {
     key: 6,
-    title: "Uniforme personalizado",
+    title: "Camisetas 100% personalizadas",
     description:
-      "Produzimos uniformes de alta qualidade para diferentes segmentos, desde esportivo até corporativo, com atenção a cada detalhe para refletir sua identidade.",
+      "Produzimos uniformes de alta qualidade para empresa, eventos, festa, grupo de corridas e outros seguimentos, desde esportivo até corporativo, com atenção a cada detalhe para refletir sua identidade.",
   },
 ];
 
@@ -76,7 +76,7 @@ const reviews = [
     infos: ["Escolinha Esporte Clube Bahia", "São Leopoldo"],
     images: ["/images/reviews/1/WhatsApp Image 2024-12-03 at 09.50.36.jpeg"],
     description:
-      "Eu só tenho agradecer por vocês aceitar fazer parte do nosso projeto a parceria de vocês muito importante. Com esse material maravilhoso de boa qualidade. E Pessoas incríveis que te dão um suporte fantástico e a tendência empresa só cresce obrigado pelo apoio até hoje e mais coisas boas virão para vocês. Obrigado",
+      "Eu só tenho agradecer por vocês aceitarem fazer parte do nosso projeto, a parceria de vocês muito importante. Com esse material maravilhoso de boa qualidade. E Pessoas incríveis que te dão um suporte fantástico e a tendência empresa é só crescer. Obrigado pelo apoio até hoje, mais coisas boas virão para vocês. Obrigado.",
   },
   {
     key: 2,
@@ -469,11 +469,11 @@ function AboutUs() {
             Sobre Nós
           </h1>
           <p className="text-sm md:text-sm mb-10">
-            Desde 2015, a Locateli Sports tem se dedicado a transformar a paixão
+            Desde 2020, a Locateli Sports tem se dedicado a transformar a paixão
             pelo esporte em peças únicas e de alta qualidade. Somos
             especialistas na confeção de uniformes esportivos personalizados,
-            atendendo equipes de todos os níveis, desde amadores até
-            profissionais, com soluções que combinam conforto, durabilidade e
+            atendendo equipes e atletas de todos os níveis, do amador ao
+            profissional, com soluções que combinam conforto, durabilidade e
             estilo.
             <br />
             <br />
@@ -485,8 +485,8 @@ function AboutUs() {
             <br />
             <br />
             Mais do que uniformes, criamos experiências. Com a Locateli Sports,
-            sua equipe estará sempre preparada para vestir a vitória. Venha
-            fazer parte da nossa história!
+            sua equipe estará sempre preparada para vestir a vitória. Queromos
+            fazer parte da sua história!
           </p>
         </div>
 
