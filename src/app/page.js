@@ -662,8 +662,8 @@ function Footer() {
           >
             (51) 98227-7464
           </a>
-          <a className="text-sm font-medium">(51) 98227-7464</a>
-          <a className="text-sm font-medium">locatelisports@gmail.com</a>
+          <a href="tel:+5551982277464" className="text-sm font-medium">(51) 98227-7464</a>
+          <a href="mailto:locatelisports@gmail.com" className="text-sm font-medium">locatelisports@gmail.com</a>
         </div>
         <div className="mb-5 md:mb-20 col-span-4 md:col-span-1 flex flex-col">
           <div className="text-base font-semibold">MENU</div>
