@@ -24,7 +24,7 @@ const ourServices = [
     key: 3,
     title: "Boné personalizado",
     description:
-      "Criamos bonés personalizados com bordados ou estampas de alta qualidade, ideais para times, eventos ou divulgação de marcas.",
+      "Produzimos bonés personalizados com bordados ou estampas de alta qualidade, ideais para times, eventos ou divulgação de marcas.",
   },
   {
     key: 4,
