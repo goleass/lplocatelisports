@@ -22,7 +22,7 @@ jobs:
 
     - name: Deploy to Server
       run: |
-        ssh deploy@${{ vars.SERVER_HOST }} "
+        ssh root@${{ vars.SERVER_HOST }} "
           cd ${{ vars.ROOT_PATH }} &&
           git pull &&
           npm install &&
