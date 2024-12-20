@@ -23,9 +23,9 @@ export const metadata = {
     siteName: "Locateli Sports",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://locatelisports.com.br/og-image.jpg",
         width: 800,
-        height: 600,
+        height: 800,
         alt: "Locateli Sports Logo",
       },
     ],
