@@ -25,6 +25,7 @@ jobs:
         ssh root@${{ vars.SERVER_HOST }} "
           cd ${{ vars.ROOT_PATH }} &&
           git pull &&
+          nvm use 18 &&
           npm install &&
           npm run build &&
           pm2 restart ${{ vars.PM2_APP_NAME }}
