@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://locatelisports.com.br
+
+# Sitemaps
+Sitemap: https://locatelisports.com.br/sitemap.xml

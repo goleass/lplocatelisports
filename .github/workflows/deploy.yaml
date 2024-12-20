@@ -20,14 +20,6 @@ jobs:
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan ${{ vars.SERVER_HOST }} >> ~/.ssh/known_hosts
 
-    - name: Set up Node.js with NVM
-      run: |
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-        export NVM_DIR="$HOME/.nvm"
-        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-        nvm install 18
-        nvm use 18
-
     - name: Deploy to Server
       run: |
         ssh root@${{ vars.SERVER_HOST }} "
