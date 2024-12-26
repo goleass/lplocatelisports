@@ -42,7 +42,7 @@ const ourServices = [
     key: 6,
     title: "Camisetas 100% personalizadas",
     description:
-      "Produzimos uniformes de alta qualidade para empresa, eventos, festa, grupo de corridas e outros seguimentos, desde esportivo até corporativo, com atenção a cada detalhe para refletir sua identidade.",
+      "Produzimos uniformes de alta qualidade para empresa, eventos, festa, grupo de corridas e outros segmentos, desde esportivo até corporativo, com atenção a cada detalhe para refletir sua identidade.",
   },
 ];
 
@@ -662,7 +662,6 @@ function Footer() {
           >
             (51) 98227-7464
           </a>
-          <a href="tel:+5551982277464" className="text-sm font-medium">(51) 98227-7464</a>
           <a href="mailto:locatelisports@gmail.com" className="text-sm font-medium">locatelisports@gmail.com</a>
         </div>
         <div className="mb-5 md:mb-20 col-span-4 md:col-span-1 flex flex-col">
