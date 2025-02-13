@@ -239,7 +239,9 @@ function Header() {
         {/* Botão */}
         <div className="col-span-2 items-center justify-end hidden md:flex">
           <a
-            href="#action"
+            href="https://wa.me/5551982277464?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%21"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#007866] text-white px-4 py-2 rounded hover:bg-[#166357]"
           >
             Orçamento
