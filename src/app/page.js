@@ -67,6 +67,31 @@ const portifolio = [
     mockupUrl: "/images/portifolio/mockup-5.png",
     thumbnailUrl: "/images/portifolio/5.png",
   },
+  {
+    key: 6,
+    mockupUrl: "/images/portifolio/mockup-6.png",
+    thumbnailUrl: "/images/portifolio/6.png",
+  },
+  {
+    key: 7,
+    mockupUrl: "/images/portifolio/mockup-7.png",
+    thumbnailUrl: "/images/portifolio/7.png",
+  },
+  {
+    key: 8,
+    mockupUrl: "/images/portifolio/mockup-8.png",
+    thumbnailUrl: "/images/portifolio/8.png",
+  },
+  {
+    key: 9,
+    mockupUrl: "/images/portifolio/mockup-9.png",
+    thumbnailUrl: "/images/portifolio/9.png",
+  },
+  {
+    key: 10,
+    mockupUrl: "/images/portifolio/mockup-10.png",
+    thumbnailUrl: "/images/portifolio/10.png",
+  },
 ];
 
 const reviews = [
