@@ -172,7 +172,7 @@ const faqs = [
   {
     question: "Qual é o prazo de produção e entrega dos uniformes?",
     answer:
-      "O prazo pode variar dependendo da quantidade e da complexidade do design solicitado. Em média, o processo leva de 15 a 30 dias úteis após a aprovação final do layout.",
+      "O prazo pode variar dependendo da quantidade e da complexidade do design solicitado. Em média, o processo leva de 30 a 45 dias úteis após a aprovação final do layout.",
   },
   {
     question: "Existe um pedido mínimo para a produção de uniformes?",
