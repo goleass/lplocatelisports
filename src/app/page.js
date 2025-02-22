@@ -117,6 +117,27 @@ const reviews = [
     images: ["/images/reviews/3/WhatsApp Image 2024-12-09 at 20.35.27.jpeg"],
     description: "Vcs fizeram nosso uniforme e os pais amaram",
   },
+  {
+    key: 4,
+    title: "Helton, Laguna",
+    infos: [],
+    images: ["/images/reviews/4/WhatsApp Image 2025-01-08 at 10.58.08.jpeg"],
+    description: "Excelente atendimento e material de muita qualidade. Recomendo",
+  },
+  {
+    key: 5,
+    title: "Leandro, Parma",
+    infos: [],
+    images: ["/images/reviews/5/WhatsApp Image 2025-01-08 at 10.58.08 (1).jpeg"],
+    description: "Projeto social cecab parma o qual eu faco parte estamos muito satisfeito com qualidades do material da Locateli, estão de parabéns pelo ótimo trabalho",
+  },
+  {
+    key: 6,
+    title: "Rafael, Santos SL",
+    infos: [],
+    images: ["/images/reviews/6/WhatsApp Image 2025-01-08 at 10.58.08.jpeg"],
+    description: "",
+  },
 ];
 
 const faqs = [
@@ -560,9 +581,9 @@ function ReviewCard({ title, description, images, infos }) {
             })}
           </div>
         )}
-        <p className="text-sm px-4 md:px-10 text-center">
+        {description && <p className="text-sm px-4 md:px-10 text-center">
           &quot;{description}&quot;
-        </p>
+        </p>}
       </div>
 
       <div className="my-5 flex items-center justify-center gap-3">
