@@ -121,14 +121,14 @@ const reviews = [
     key: 4,
     title: "Helton, Laguna",
     infos: [],
-    images: ["/images/reviews/4/WhatsApp Image 2025-01-08 at 10.58.08.jpeg"],
+    images: ["/images/reviews/4/WhatsApp Image 2025-01-08 at 10.58.08 (1).jpeg"],
     description: "Excelente atendimento e material de muita qualidade. Recomendo",
   },
   {
     key: 5,
     title: "Leandro, Parma",
     infos: [],
-    images: ["/images/reviews/5/WhatsApp Image 2025-01-08 at 10.58.08 (1).jpeg"],
+    images: ["/images/reviews/5/WhatsApp Image 2025-01-08 at 10.58.081.jpeg"],
     description: "Projeto social cecab parma o qual eu faco parte estamos muito satisfeito com qualidades do material da Locateli, estão de parabéns pelo ótimo trabalho",
   },
   {
