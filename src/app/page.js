@@ -264,7 +264,9 @@ function Header() {
         {/* Botão */}
         <div className="col-span-2 items-center justify-end hidden md:flex">
           <a
-            href="#action"
+            href="https://wa.me/5551982277464?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%21"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#007866] text-white px-4 py-2 rounded hover:bg-[#166357]"
           >
             Orçamento
@@ -724,7 +726,7 @@ function Footer() {
           <div className="my-3 col-span-12 flex flex-col justify-center items-center text-xs md:text-base">
             <div className="flex flex-col">
               <div className="text-center text-[#FFF]">
-                © Copyright 2024 Todos os direitos reservados | Locateli Sports
+                © Copyright 2025 Todos os direitos reservados | Locateli Sports
                 - CNPJ: 46.996.636/0001-36{" "}
               </div>
               <div className="text-center text-[#FFF]">
